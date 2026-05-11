@@ -74,9 +74,22 @@ export default function Projects() {
                 justifyContent: "center",
                 color: "#a855f7",
                 background: "linear-gradient(135deg, #1a1030, #0d1a2a)",
+                position: "relative",
               }}
             >
-              {p.emoji}
+              {p.image ? (
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              ) : (
+                p.emoji
+              )}
             </div>
 
             {/* Body */}
