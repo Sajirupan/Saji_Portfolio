@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sajirupan's Premium Portfolio 🚀
 
-## Getting Started
+Welcome to my personal portfolio! This is a modern, high-performance web application designed to showcase my skills, projects, and professional journey as a Full-stack Developer.
 
-First, run the development server:
+![Portfolio Preview](public/saji.jpeg) *(Note: Add a real screenshot here later)*
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Modern Tech Stack**: Built with Next.js (App Router), React 19, and TypeScript.
+- **Premium Design**: Sleek dark-mode aesthetic with glassmorphism effects and smooth transitions.
+- **Interactive UI**: Powered by Framer Motion for smooth scroll animations and micro-interactions.
+- **Responsive Layout**: Optimized for all devices, from desktop to mobile.
+- **Lucide Icons**: Consistent and professional vector iconography throughout the site.
+- **Contact System**: Integrated contact form with real-time validation and feedback.
+- **Data-Driven**: Easily customizable through a central data configuration file.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Technology Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Frontend**: [Next.js](https://nextjs.org/), [React](https://reactjs.org/), [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/), [React Icons](https://react-icons.github.io/react-icons/)
+- **Styling**: Vanilla CSS with modern CSS Variables
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+To run this project locally:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Sajirupan/Saji_Portfolio.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **View the site**:
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📂 Project Structure
+
+- `app/`: Next.js App Router pages and global styles.
+- `components/`: Reusable UI components (Hero, About, Projects, etc.).
+- `lib/data.tsx`: Centralized data file for easy content management.
+- `public/`: Static assets including profile images and icons.
+
+## 🤝 Contact
+
+Feel free to reach out to me!
+
+- **Email**: [balabavansajirupan@gmail.com](mailto:balabavansajirupan@gmail.com)
+- **LinkedIn**: [balabavan-sajirupan](https://www.linkedin.com/in/balabavan-sajirupan/)
+- **Twitter/X**: [@saji__sr](https://x.com/saji__sr)
+- **GitHub**: [@Sajirupan](https://github.com/Sajirupan)
+
+---
+Built with 💜 by Sajirupan
