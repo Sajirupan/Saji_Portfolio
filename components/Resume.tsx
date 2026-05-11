@@ -65,7 +65,7 @@ export default function Resume() {
 
       <div style={{ marginBottom: "2rem" }}>
         <a
-          href="/resume.pdf"
+          href="/SAJIRUPAN_CV.pdf"
           download
           style={{
             display: "inline-flex",

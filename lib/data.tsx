@@ -19,10 +19,10 @@ export const personalInfo = {
   phone: "+94 76 736 0102",
   availability: "Open to Work",
   stats: [
-    { num: "2+", label: "Years Experience" },
-    { num: "20+", label: "Projects Completed" },
-    { num: "10+", label: "Clients Served" },
-    { num: "5", label: "Certifications" },
+    { num: "1+", label: "Years Experience" },
+    { num: "7+", label: "Projects Completed" },
+    { num: "2+", label: "Clients Served" },
+    { num: "2", label: "Certifications" },
   ],
   socials: {
     linkedin: "https://www.linkedin.com/in/balabavan-sajirupan/",
