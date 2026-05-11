@@ -100,6 +100,7 @@ export const projects = [
   {
     title: "VocaTrust Lanka",
     image: "/vocatrust.png",
+    emoji: <Bot size={40} />,
     desc: "Full-stack  Voice-based customer feedback and testimonial platform with AI-powered transcription and secure user management.",
     tags: ["Next.js", "Node.js", "MY SQL"],
     cat: "web",
@@ -109,6 +110,7 @@ export const projects = [
   {
     title: "Smart Queue Handling System",
     image: "/smart_queue.png",
+    emoji: <RefreshCw size={40} />,
     desc: "A web application to manage queues in shops and restaurants, with real-time updates and notifications.",
     tags: ["Next.js", "Node.js", "MongoDB"],
     cat: "web",
