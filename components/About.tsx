@@ -83,9 +83,10 @@ export default function About() {
               { label: "Name", value: personalInfo.name },
               { label: "Location", value: personalInfo.location },
               { label: "Email", value: personalInfo.email },
-              { label: "Availability", value: personalInfo.availability, accent: true },
+              { label: "Phone", value: personalInfo.phone },
+              { label: "Availability", value: personalInfo.availability, accent: true, fullWidth: true },
             ].map((d) => (
-              <div key={d.label}>
+              <div key={d.label} style={{ gridColumn: d.fullWidth ? "span 2" : "auto" }}>
                 <div style={{ color: "#8b85a0", fontSize: "0.78rem", marginBottom: "0.2rem" }}>
                   {d.label}
                 </div>
@@ -105,9 +106,9 @@ export default function About() {
 
           <button
             suppressHydrationWarning
-            onClick={() =>
-              document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
-            }
+            onClick={() => {
+              window.location.href = `mailto:${personalInfo.email}`;
+            }}
             style={{
               background: "linear-gradient(135deg,#7c3aed,#a855f7)",
               color: "#fff",

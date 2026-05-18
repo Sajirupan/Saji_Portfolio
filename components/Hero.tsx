@@ -4,8 +4,13 @@ import { Hand } from "lucide-react";
 import { FaLinkedin, FaGithub, FaXTwitter } from "react-icons/fa6";
 
 export default function Hero() {
-  const scrollTo = (id: string) =>
+  const scrollTo = (id: string) => {
+    if (id === "contact") {
+      window.location.href = `mailto:${personalInfo.email}`;
+      return;
+    }
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section
@@ -211,6 +216,7 @@ export default function Hero() {
       </div>
 
       {/* Stats */}
+      {/* 
       <div
         style={{
           width: "100%",
@@ -220,7 +226,7 @@ export default function Hero() {
           zIndex: 1,
         }}
       >
-        {personalInfo.stats.map((s) => (
+        {personalInfo.stats?.map((s: any) => (
           <div
             key={s.label}
             style={{
@@ -254,6 +260,7 @@ export default function Hero() {
           </div>
         ))}
       </div>
+      */}
     </section>
   );
 }

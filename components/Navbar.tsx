@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { personalInfo } from "@/lib/data";
 import { Menu, X } from "lucide-react";
 
-const navItems = ["home", "about", "resume", "skills", "projects", "articles", "contact"];
+const navItems = ["home", "about", "resume", "skills", "projects", "articles"];
 
 export default function Navbar() {
   const [active, setActive] = useState("home");
@@ -25,6 +25,11 @@ export default function Navbar() {
   }, []);
 
   const scrollTo = (id: string) => {
+    if (id === "contact") {
+      window.location.href = `mailto:${personalInfo.email}`;
+      setMenuOpen(false);
+      return;
+    }
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setMenuOpen(false);
   };
@@ -65,7 +70,6 @@ export default function Navbar() {
       {/* Desktop links */}
       <ul
         style={{
-          display: "flex",
           gap: "2rem",
           listStyle: "none",
         }}
@@ -96,14 +100,13 @@ export default function Navbar() {
 
       <button
         suppressHydrationWarning
-        className="md:hidden"
+        className="flex md:hidden"
         onClick={() => setMenuOpen(!menuOpen)}
         style={{
           background: "none",
           border: "none",
           cursor: "pointer",
           color: "#f1f0ff",
-          display: "flex",
           alignItems: "center",
           justifyContent: "center",
         }}

@@ -3,10 +3,15 @@ import { personalInfo } from "@/lib/data";
 import { Heart } from "lucide-react";
 
 export default function Footer() {
-  const scrollTo = (id: string) =>
+  const scrollTo = (id: string) => {
+    if (id === "contact") {
+      window.location.href = `mailto:${personalInfo.email}`;
+      return;
+    }
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
 
-  const navItems = ["home", "about", "resume", "skills", "projects", "articles", "contact"];
+  const navItems = ["home", "about", "resume", "skills", "projects", "articles"];
 
   return (
     <footer

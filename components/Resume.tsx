@@ -122,39 +122,47 @@ export default function Resume() {
 
         {/* Education + Certs */}
         <div>
-          <h3
-            style={{
-              fontFamily: "var(--font-syne), sans-serif",
-              fontSize: "1.2rem",
-              color: "#a855f7",
-              marginBottom: "1.5rem",
-              display: "flex",
-              alignItems: "center",
-              gap: "0.6rem",
-            }}
-          >
-            <GraduationCap size={24} /> Education
-          </h3>
-          {education.map((e, i) => (
-            <TimelineItem key={i} {...e} last={i === education.length - 1} />
-          ))}
+          {education.length > 0 && (
+            <>
+              <h3
+                style={{
+                  fontFamily: "var(--font-syne), sans-serif",
+                  fontSize: "1.2rem",
+                  color: "#a855f7",
+                  marginBottom: "1.5rem",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0.6rem",
+                }}
+              >
+                <GraduationCap size={24} /> Education
+              </h3>
+              {education.map((e, i) => (
+                <TimelineItem key={i} {...e} last={i === education.length - 1} />
+              ))}
+            </>
+          )}
 
-          <h3
-            style={{
-              fontFamily: "var(--font-syne), sans-serif",
-              fontSize: "1.2rem",
-              color: "#a855f7",
-              margin: "2rem 0 1.5rem",
-              display: "flex",
-              alignItems: "center",
-              gap: "0.6rem",
-            }}
-          >
-            <Trophy size={22} /> Certifications
-          </h3>
-          {certifications.map((c, i) => (
-            <TimelineItem key={i} {...c} last={i === certifications.length - 1} />
-          ))}
+          {certifications.length > 0 && (
+            <>
+              <h3
+                style={{
+                  fontFamily: "var(--font-syne), sans-serif",
+                  fontSize: "1.2rem",
+                  color: "#a855f7",
+                  margin: "2rem 0 1.5rem",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0.6rem",
+                }}
+              >
+                <Trophy size={22} /> Certifications
+              </h3>
+              {certifications.map((c, i) => (
+                <TimelineItem key={i} {...c} last={i === certifications.length - 1} />
+              ))}
+            </>
+          )}
         </div>
       </div>
     </section>
